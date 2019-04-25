@@ -1,0 +1,38 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "jest": true,
+    "browser": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "lines-between-class-members": 0,
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "groups": ["builtin", "external"]
+      }
+    ],
+    "import/prefer-default-export": ["off"],
+    "class-methods-use-this": ["off"],
+    "global-require": ["off"],
+    "no-console": ["warn"],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "object": false,
+        "array": false
+      }
+    ],
+    "no-nested-ternary": "off",
+    "object-shorthand": ["error", "always"]
+  }
+}
