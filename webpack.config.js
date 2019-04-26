@@ -3,6 +3,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 // eslint-disable-next-line no-undef
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+
 // eslint-disable-next-line no-undef
 module.exports = {
   module: {
@@ -31,7 +32,7 @@ module.exports = {
         test: /\.(png|jpg|gif)$/i,
         use: [
           {
-            loader: "url-loader",
+            loader: 'url-loader',
             options: {
               limit: 8192
             }
