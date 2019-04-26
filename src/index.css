@@ -18,19 +18,33 @@ body {
 }
 
 section {
-  width: 70%;
+  width: 60%;
   background-color: #fff;
   margin: 0 auto;
   margin-top: 20px;
   display: flex;
 }
-
+section.experience {
+  width: 70%;
+  padding: 20px;
+}
+section.experience div#loading-content {
+  width: 100%;
+  text-align: center;
+}
 @media only screen and (max-width: 800px) {
   section {
-    padding: 20px;
-    width: 100%;
+    width: 100% !important;
+    padding: 5px 5px 20px 50px !important;
   }
   section img#user-photo {
     display: none;
+  }
+
+  section.experience table {
+    width: 90% !important;
+  }
+  section.experience #exp-title {
+    margin-top: 10px !important;
   }
 }

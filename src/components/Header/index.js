@@ -28,7 +28,7 @@ const Header = () => {
             <h1 style="${title}" >
               I'm <span style="${textName}">Lucas Jacinto<span>
             </h1>
-            <h3 style="${subtitle}">Software Engineer & FullStack Developer</h3>
+            <h3 style="${subtitle}">Software Engineer & Full Stack Developer</h3>
             <h4 style="${city}">Cornelio Procopio, Parana, Brazil</h4>
             <hr style="${divider}">
             <div>
