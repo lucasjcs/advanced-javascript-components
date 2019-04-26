@@ -9,6 +9,7 @@ import {
   TdStyle,
   LoadingContent,
   LoadingStyle,
+  Divider,
 } from './styles';
 
 const requestItems = () => {
@@ -36,6 +37,7 @@ const render = () => {
     <div style="${Content}">
       <div id="exp-title" style="${ContentHeader}">
         <h1 style="${Title}">Professional Experience</h1>
+        <hr style="${Divider}">
       </div>
       <div>
         ${

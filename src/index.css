@@ -28,6 +28,10 @@ section.experience {
   width: 70%;
   padding: 20px;
 }
+section.education {
+  width: 70%;
+  padding: 20px;
+}
 section.experience div#loading-content {
   width: 100%;
   text-align: center;
@@ -46,5 +50,9 @@ section.experience div#loading-content {
   }
   section.experience #exp-title {
     margin-top: 10px !important;
+  }
+
+  #university-logo {
+    width: 256px !important;
   }
 }

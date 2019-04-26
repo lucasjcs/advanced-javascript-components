@@ -6,6 +6,7 @@ export const Content = `
   flex: 1;
   width: 100%;
   align-items: center;
+  text-align: center;
 `;
 
 export const ContentHeader = `
@@ -20,31 +21,14 @@ export const Title = `
   font-size: 26pt;
 `;
 
-export const CompanyName = `
+export const LogoStyle = `
+  width: 512px;
+`;
+
+export const CourseTitle = `
   color: ${colors.primary};
-  font-size: 18pt;
-  font-weight: bold;
-`;
-
-export const TableStyle = `
-  width: 90%;
-  margin-bottom: 30px;
-`;
-
-export const TdStyle = `
-  padding: 5px 10px 5px 0px;
-  font-weight: bold;
-`;
-
-export const LoadingContent = `
-  width: 100%;
-  text-align: center;
-  margin-top: 0;
-`;
-
-export const LoadingStyle = `
-  width: 64px;
-  align-self: center;
+  font-size: 26pt;
+  margin-bottom: -15px;
 `;
 
 export const Divider = `
