@@ -1,4 +1,4 @@
-import api from '../../services/api';
+import { get } from '../../services/api';
 import Loading from '../../images/Loading.gif';
 import {
   Content,
@@ -18,21 +18,24 @@ const localState = {
   error: false,
 };
 
-const requestItems = async () => {
-  try {
-    const { data, status } = await api.get('/experience');
+const requestItems = () => {
+  setTimeout(async () => {
+    try {
+      const data = await get('/experience');
+      window.state = {
+        ...window.state,
+        experienceList: [...window.state.experienceList, data],
+      };
 
-    window.state = {
-      ...window.state,
-      experienceList: [...window.state.experienceList, data],
-    };
-    localState.loading = false;
-    render();
-  } catch (error) {
-    localState.error = true;
-    render();
-    console.log('deu ruim');
-  }
+      localState.loading = false;
+      render();
+    } catch (error) {
+      console.log(error);
+      localState.error = true;
+
+      render();
+    }
+  }, 1000);
 };
 
 const Experience = () => {

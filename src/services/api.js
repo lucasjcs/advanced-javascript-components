@@ -1,7 +1,5 @@
-import axios from 'axios';
+const baseUrl = 'https://demo2718530.mockable.io';
 
-const api = axios.create({
-  baseURL: 'http://demo8422800.mockable.io',
-});
-
-export default api;
+export const get = async url => {
+  return fetch(`${baseUrl}${url}`).then(item => item.json());
+};

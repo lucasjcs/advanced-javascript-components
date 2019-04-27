@@ -15,14 +15,12 @@ import {
 import LinkedinLogo from '../../images/LinkedinLogo.png';
 import GithubLogo from '../../images/GithubLogo.png';
 import InstagramLogo from '../../images/InstagramLogo.png';
+import UserPhoto from '../../images/UserPhoto.png';
 
 const Header = () => {
-  const img =
-    'https://avatars3.githubusercontent.com/u/20274741?s=400&u=6c9281059280729906206b463131d782cca2b542&v=4';
-
   document.getElementById('header').innerHTML = /*html*/ `
       <header style="${info}">
-        <img id="user-photo" style="${image}" src="${img}" alt="Photo of Lucas"/>
+        <img id="user-photo" style="${image}" src="${UserPhoto}" alt="Photo of Lucas"/>
         <div>
           <div style="${content}">
             <h1 style="${title}" >

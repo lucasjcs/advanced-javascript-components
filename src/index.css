@@ -8,9 +8,20 @@ body {
   height: 100%;
   font-family: 'Ubuntu', sans-serif;
   background-color: #3f4051;
-  /* background-image: linear-gradient(#333 30%, #ccc 30%); */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+}
+
+.btn-theme {
+  float: right;
+  position: fixed;
+  right: 0px;
+  background-color: #008c8c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .container {
@@ -18,7 +29,7 @@ body {
 }
 
 section {
-  width: 60%;
+  width: 50%;
   background-color: #eee;
   margin: 0 auto;
   margin-top: 20px;
@@ -37,14 +48,33 @@ section.education {
   width: 70%;
   padding: 20px;
 }
+section.skills {
+  width: 70%;
+  padding: 20px;
+}
 section.experience div#loading-content {
   width: 100%;
   text-align: center;
 }
+
+@media only screen and (max-width: 1080px) {
+  section.header {
+    width: 70%;
+    padding: 5px 5px 20px 50px !important;
+  }
+  .btn-theme {
+    position: relative;
+  }
+}
+
 @media only screen and (max-width: 800px) {
+  .btn-theme {
+    position: absolute;
+  }
   section {
     width: 100% !important;
     padding: 5px 5px 20px 50px !important;
+    border-radius: 0%;
   }
   section img#user-photo {
     display: none;
