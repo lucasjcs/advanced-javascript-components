@@ -21,7 +21,6 @@ export const info = `
 
 export const title = `
   margin-bottom: -15px;
-  color: ${colors.darker};
 `;
 
 export const image = `
@@ -32,7 +31,6 @@ export const image = `
 
 export const subtitle = `
   margin-bottom: -18px;
-  color: ${colors.darker}
 `;
 
 export const city = `

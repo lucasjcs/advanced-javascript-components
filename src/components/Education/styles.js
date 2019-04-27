@@ -26,7 +26,6 @@ export const LogoStyle = `
 `;
 
 export const CourseTitle = `
-  color: ${colors.secundary};
   font-size: 26pt;
   margin-bottom: -15px;
 `;

@@ -42,7 +42,6 @@ export const SkillThumb = `
 export const SkillName = `
   font-size: 16pt;
   font-weight: bold;
-  color: ${colors.secundary};
 `;
 
 export const SkillLevel = level => `
