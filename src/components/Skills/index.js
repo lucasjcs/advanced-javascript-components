@@ -11,6 +11,8 @@ import {
   SkillName,
   LoadingContent,
   LoadingStyle,
+  BachelorTitle,
+  BItemList,
 } from './styles';
 
 import Loading from '../../images/Loading.gif';
@@ -44,6 +46,7 @@ const Skills = () => {
 };
 
 const render = () => {
+  const { skills, bachelor_skills } = window.state.skillsList;
   document.getElementById('skills').innerHTML = /*html*/ `
     <div style="${Content}">
       <div id="exp-title" style="${ContentHeader}">
@@ -59,30 +62,52 @@ const render = () => {
       ${
         localState.loading
           ? `
-        <div style="${LoadingContent}">
-         <img style="${LoadingStyle}" src="${Loading}"/>
-        </div>
+            <div style="${LoadingContent}">
+            <img style="${LoadingStyle}" src="${Loading}"/>
+            </div>
         `
-          : ''
-      }
-      <div>
-        <ul>
-          ${window.state.skillsList
-            .map(
-              skill => /*html*/ `
-              <li style="${SkillItem}">
-                <span style="${SkillName}" >${skill.name}</span>
-                <div style="${SkillLevelBG}">
-                  <div style="${SkillLevel(skill.level)}"></div>
-                </div>
-              </li>
-          `
-            )
-            .join(' ')}
-        </ul>
-      </div>
+          : /*html*/ `
+            <div>
+              <ul>
+                ${
+                  skills !== undefined
+                    ? skills
+                        .map(
+                          skill => /*html*/ `
+                    <li style="${SkillItem}">
+                      <span style="${SkillName}" >${skill.name}</span>
+                      <div style="${SkillLevelBG}">
+                        <div style="${SkillLevel(skill.level)}"></div>
+                      </div>
+                    </li>
+                `
+                        )
+                        .join(' ')
+                    : ''
+                }
+              </ul>
+            </div>
 
+            <div>
+              <h2 style="${BachelorTitle}">Software Engineer Skills</h2>
+              <ul>
+                ${
+                  bachelor_skills !== undefined
+                    ? bachelor_skills
+                        .map(
+                          bskil => /*html*/ `
+                      <li style="${BItemList}" >${bskil.desc}</li>
+                    `
+                        )
+                        .join(' ')
+                    : ''
+                }
+              </ul>
+            </div>
+      `
+      }
     </div>
+
   `;
 };
 

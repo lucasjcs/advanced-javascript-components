@@ -35,10 +35,6 @@ export const SkillItem = `
   padding-bottom: 15px;
 `;
 
-export const SkillThumb = `
-  width: 64px;
-`;
-
 export const SkillName = `
   font-size: 16pt;
   font-weight: bold;
@@ -64,4 +60,12 @@ export const LoadingContent = `
 export const LoadingStyle = `
   width: 64px;
   align-self: center;
+`;
+
+export const BachelorTitle = `
+  padding-left: 20px;
+`;
+export const BItemList = `
+  font-size: 15pt;
+  padding-bottom: 15px;
 `;
