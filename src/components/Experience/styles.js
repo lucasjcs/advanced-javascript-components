@@ -21,7 +21,7 @@ export const Title = `
 `;
 
 export const CompanyName = `
-  color: ${colors.secundary};
+  color: ${colors.primary};
   font-size: 18pt;
   font-weight: bold;
 `;

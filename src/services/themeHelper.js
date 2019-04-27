@@ -25,7 +25,7 @@ export const themeCheck = () => {
     .getElementById('container')
     .querySelectorAll('section');
 
-  if (window.state.theme === 'LIGHTER_THEME') {
+  if (window.state.theme === 'DARKER_THEME') {
     sections.forEach(section => {
       section.style.color = colors.white;
       section.style.background = colors.darker;

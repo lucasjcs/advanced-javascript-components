@@ -54,3 +54,14 @@ export const SkillLevelBG = `
   width: 100%;
   background: ${colors.light};
 `;
+
+export const LoadingContent = `
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+`;
+
+export const LoadingStyle = `
+  width: 64px;
+  align-self: center;
+`;

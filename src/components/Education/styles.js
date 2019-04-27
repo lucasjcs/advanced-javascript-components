@@ -30,6 +30,11 @@ export const CourseTitle = `
   margin-bottom: -15px;
 `;
 
+export const LinkTitle = `
+  text-decoration: inherit;
+  color: inherit;
+`;
+
 export const Divider = `
   width: 80%;
   margin-bottom: 30px;

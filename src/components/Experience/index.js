@@ -32,10 +32,11 @@ const requestItems = () => {
     } catch (error) {
       console.error(error);
       localState.error = true;
+      localState.loading = false;
 
       render();
     }
-  }, 1000);
+  }, 1500);
 };
 
 const Experience = () => {
@@ -63,38 +64,43 @@ const render = () => {
              <img style="${LoadingStyle}" src="${Loading}"/>
             </div>
             `
-            : window.state.experienceList[0].map(
-                item => /*html*/ `
-                <div>
-                  <table style="${TableStyle}">
-                    <tbody>
-                      <tr>
-                        <td style="${TdStyle}">Company:</td>
-                        <td style="${CompanyName}">${item.company}</td>
-                      </tr>
-                      <tr>
-                        <td style="${TdStyle}">Period:</td>
-                        <td>${item.period_start} - ${item.period_end}</td>
-                      </tr>
-                      <tr>
-                        <td style="${TdStyle}">Performed Activities:</td>
-                        <td>${item.activities}</td>
-                      </tr>
-                      <tr>
-                        <td style="${TdStyle}">Responsibilities:</td>
-                        <td>
-                          <ul>
-                            <li>${item.responsabilities.tests}</li>
-                            <li>${item.responsabilities.mentor}</li>
-                          </ul>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-            `
-              )
+            : ''
         }
+
+        <div>
+          ${window.state.experienceList.map(
+            item => /*html*/ `
+              <div>
+                <table style="${TableStyle}">
+                  <tbody>
+                    <tr>
+                      <td style="${TdStyle}">Company:</td>
+                      <td style="${CompanyName}">${item.company}</td>
+                    </tr>
+                    <tr>
+                      <td style="${TdStyle}">Period:</td>
+                      <td>${item.period_start} - ${item.period_end}</td>
+                    </tr>
+                    <tr>
+                      <td style="${TdStyle}">Performed Activities:</td>
+                      <td>${item.activities}</td>
+                    </tr>
+                    <tr>
+                      <td style="${TdStyle}">Responsibilities:</td>
+                      <td>
+                        <ul>
+                          <li>${item.responsabilities.tests}</li>
+                          <li>${item.responsabilities.mentor}</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          `
+          )}
+        </div>
+
       </div>
     </div>
 `;

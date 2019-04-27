@@ -5,27 +5,38 @@ import {
   Title,
   Divider,
   ErrorStyle,
-  SkillsBar,
   SkillItem,
   SkillLevel,
   SkillLevelBG,
   SkillName,
+  LoadingContent,
+  LoadingStyle,
 } from './styles';
+
+import Loading from '../../images/Loading.gif';
 
 const localState = {
   loading: true,
   error: false,
 };
 
-const requestItems = async () => {
-  try {
-    const data = await get('/skills');
-    window.state = {
-      ...window.state,
-      skillsList: data,
-    };
-    render();
-  } catch (error) {}
+const requestItems = () => {
+  setTimeout(async () => {
+    try {
+      const data = await get('/skills');
+      window.state = {
+        ...window.state,
+        skillsList: data,
+      };
+      localState.loading = false;
+      render();
+    } catch (error) {
+      localState.error = true;
+      localState.loading = false;
+      console.error(error);
+      render();
+    }
+  }, 3000);
 };
 const Skills = () => {
   requestItems();
@@ -45,7 +56,16 @@ const render = () => {
         }
       </div>
 
-      <div style="${SkillsBar}">
+      ${
+        localState.loading
+          ? `
+        <div style="${LoadingContent}">
+         <img style="${LoadingStyle}" src="${Loading}"/>
+        </div>
+        `
+          : ''
+      }
+      <div>
         <ul>
           ${window.state.skillsList
             .map(

@@ -3,6 +3,7 @@ import {
   ContentHeader,
   Title,
   CourseTitle,
+  LinkTitle,
   Divider,
   LogoStyle,
 } from './styles';
@@ -18,9 +19,15 @@ const Education = () => {
       </div>
       <img id="university-logo" style="${LogoStyle}" src="${UtfprLighterLogo}" alt="UTFPR"/>
       <div>
-        <h3 style="${CourseTitle}">Software Engineering</h3>
+        <h3 style="${CourseTitle}">
+          <a style="${LinkTitle}" target="_blank"
+             href="http://www.utfpr.edu.br/cornelioprocopio/cursos/bacharelados/Ofertados-neste-Campus/engenharia-de-software">
+             Software Engineering
+          </a>
+        </h3>
         <h4>2014 - 2018</h4>
       </div>
+
     </div>
   `;
 };
