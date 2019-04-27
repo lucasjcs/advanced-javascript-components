@@ -21,7 +21,6 @@ export const saveTheme = () => {
 };
 
 export const themeCheck = () => {
-  console.log('to dentro');
   const sections = document
     .getElementById('container')
     .querySelectorAll('section');

@@ -30,7 +30,7 @@ const requestItems = () => {
       localState.loading = false;
       render();
     } catch (error) {
-      console.log(error);
+      console.error(error);
       localState.error = true;
 
       render();

@@ -7,7 +7,6 @@ import {
   ErrorStyle,
   SkillsBar,
   SkillItem,
-  SkillThumb,
   SkillLevel,
   SkillLevelBG,
   SkillName,
@@ -34,7 +33,6 @@ const Skills = () => {
 };
 
 const render = () => {
-  console.log(window.state.skillsList);
   document.getElementById('skills').innerHTML = /*html*/ `
     <div style="${Content}">
       <div id="exp-title" style="${ContentHeader}">
