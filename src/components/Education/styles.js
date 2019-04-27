@@ -17,7 +17,7 @@ export const ContentHeader = `
 export const Title = `
   margin-top: -5px;
   margin-bottom: 0px;
-  color: ${colors.darker};
+  color: ${colors.primary};
   font-size: 26pt;
 `;
 
@@ -26,7 +26,7 @@ export const LogoStyle = `
 `;
 
 export const CourseTitle = `
-  color: ${colors.primary};
+  color: ${colors.secundary};
   font-size: 26pt;
   margin-bottom: -15px;
 `;

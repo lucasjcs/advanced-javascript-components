@@ -10,21 +10,29 @@ import {
   LoadingContent,
   LoadingStyle,
   Divider,
+  ErrorStyle,
 } from './styles';
 
-const requestItems = () => {
-  setTimeout(async () => {
+const localState = {
+  loading: true,
+  error: false,
+};
+
+const requestItems = async () => {
+  try {
     const { data, status } = await api.get('/experience');
-    if (status === 200) {
-      window.state = {
-        ...window.state,
-        list: [...window.state.list, data],
-        loading: false,
-      };
-    }
-    console.log(window.state.list);
+
+    window.state = {
+      ...window.state,
+      experienceList: [...window.state.experienceList, data],
+    };
+    localState.loading = false;
     render();
-  }, 1000);
+  } catch (error) {
+    localState.error = true;
+    render();
+    console.log('deu ruim');
+  }
 };
 
 const Experience = () => {
@@ -38,16 +46,21 @@ const render = () => {
       <div id="exp-title" style="${ContentHeader}">
         <h1 style="${Title}">Professional Experience</h1>
         <hr style="${Divider}">
+        ${
+          localState.error
+            ? `<h1 style="${ErrorStyle}">Could not load list, please try again later!</h1>`
+            : ''
+        }
       </div>
       <div>
         ${
-          window.state.loading
+          localState.loading
             ? `
             <div style="${LoadingContent}">
              <img style="${LoadingStyle}" src="${Loading}"/>
             </div>
             `
-            : window.state.list[0].map(
+            : window.state.experienceList[0].map(
                 item => /*html*/ `
                 <div>
                   <table style="${TableStyle}">

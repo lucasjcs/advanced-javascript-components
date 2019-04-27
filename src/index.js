@@ -4,9 +4,10 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 
 window.state = {
-  list: [],
+  experienceList: [],
+  skillsList: [],
+  theme: 'LIGHTER_THEME',
   loading: true,
-  theme: '',
 };
 
 Header();

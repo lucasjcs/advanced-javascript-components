@@ -26,7 +26,8 @@ export const title = `
 
 export const image = `
   height: 300px;
-  padding-right: 50px;
+  margin-right: 50px;
+  border-radius: 50%;
 `;
 
 export const subtitle = `

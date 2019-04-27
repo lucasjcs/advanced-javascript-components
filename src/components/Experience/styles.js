@@ -16,12 +16,12 @@ export const ContentHeader = `
 export const Title = `
   margin-top: -5px;
   margin-bottom: 0px;
-  color: ${colors.darker};
+  color: ${colors.primary};
   font-size: 26pt;
 `;
 
 export const CompanyName = `
-  color: ${colors.primary};
+  color: ${colors.secundary};
   font-size: 18pt;
   font-weight: bold;
 `;
@@ -51,4 +51,7 @@ export const Divider = `
   width: 80%;
   margin-bottom: 30px;
 
+`;
+export const ErrorStyle = `
+  color: ${colors.danger}
 `;
