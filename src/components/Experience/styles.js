@@ -29,6 +29,7 @@ export const CompanyName = `
 export const TableStyle = `
   width: 90%;
   margin-bottom: 30px;
+  padding-left: 20px;
 `;
 
 export const TdStyle = `
