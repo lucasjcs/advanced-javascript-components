@@ -1,50 +1,56 @@
 ## Sobre
 
-Olá! Este projeto consiste em um currículo simples desenvolvido em javascript (ES6) puro, sem utilizar bibliotecas ou frameworks.
-
+Olï¿½! Este projeto consiste em um currï¿½culo simples desenvolvido em javascript (ES6) puro, sem utilizar bibliotecas ou frameworks.
 
 ## Tecnologias
- - HTML5
- - CSS3
- - JavaScript (ES6+)
- - [Webpack](https://webpack.js.org/)  `4.30.0` utilizado para compilar os módulos JavaScript
- - [ESLint](https://eslint.org/) `5.16.0` para auxiliar nas regras de escrita de código JavaScript
- - [Prettier](https://prettier.io/) `1.14.2` para auxiliar na indentação automática durante o desenvolvimento
--	[Yarn](https://yarnpkg.com/pt-BR/) `1.15.2` gerenciador de pacotes utilizado para instalação de dependências
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- [Webpack](https://webpack.js.org/) `4.30.0` utilizado para compilar os mï¿½dulos JavaScript
+- [ESLint](https://eslint.org/) `5.16.0` para auxiliar nas regras de escrita de cï¿½digo JavaScript
+- [Prettier](https://prettier.io/) `1.14.2` para auxiliar na indentaï¿½ï¿½o automï¿½tica durante o desenvolvimento
+- [Yarn](https://yarnpkg.com/pt-BR/) `1.15.2` gerenciador de pacotes utilizado para instalaï¿½ï¿½o de dependï¿½ncias
 
 ## Metodologia de Desenvolvimento
 
-Neste projeto utilizei de uma abordagem modular de desenvolvimento, que consiste basicamente em separar o código em componentes, semelhante ao que acontece quando utilizamos React, por exemplo. Nesse modelo de desenvolvimento o código tende a ficar um pouco mais complexo, porém muito mais escalável e reaproveitável. 
+Neste projeto utilizei de uma abordagem modular de desenvolvimento, que consiste basicamente em separar o cï¿½digo em componentes, semelhante ao que acontece quando utilizamos React, por exemplo. Nesse modelo de desenvolvimento o cï¿½digo tende a ficar um pouco mais complexo, porï¿½m muito mais escalï¿½vel e reaproveitï¿½vel.
 
 ## Como executar
 
-##### 1 - Clone do repositório:
+##### 1 - Clone do repositï¿½rio:
+
 ```
 $ git clone https://github.com/lucasjcs/curriculo
 ```
-##### 2 - Instale as dependências:
+
+##### 2 - Instale as dependï¿½ncias:
+
 ```
-$ cd curriculo 
-$ npm install ou yarn 
+$ cd curriculo
+$ npm install ou yarn
 ```
+
 ##### 3 - Execute o projeto:
+
 ```
 $ npm start ou yarn start
 ```
-
 
 ## Estrutura do Git
 
 #### Branches
 
--   `dev`: branch de desenvolvimento em execução.
-    
--   `master`: branch de produção, onde fica a versão pronta para build.
+- `dev`: branch de desenvolvimento em execuï¿½ï¿½o.
 
-#### Commits: 
--	`feat`: entrega de funcionalidades novas
--	`fix`: correções realizadas no código
--	`config`: desenvolvimento de configurações
+- `master`: branch de produï¿½ï¿½o, onde fica a versï¿½o pronta para build.
+
+#### Commits:
+
+- `feat`: entrega de funcionalidades novas
+- `fix`: correï¿½ï¿½es realizadas no cï¿½digo
+- `config`: desenvolvimento de configuraï¿½ï¿½es
 
 ## Licence
-Este projeto foi desenvolvido com ? por  [@lucasjcs](https://github.com/lucasjcs) sob a licença [MIT](https://opensource.org/licenses/MIT).
+
+Este projeto foi desenvolvido com :heart: por [@lucasjcs](https://github.com/lucasjcs) sob a licenï¿½a [MIT](https://opensource.org/licenses/MIT).
