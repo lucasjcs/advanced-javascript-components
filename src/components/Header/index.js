@@ -1,15 +1,15 @@
 import {
-  textName,
-  info,
-  title,
-  content,
-  image,
-  subtitle,
-  city,
-  divider,
-  tableStyle,
-  tdStyle,
-  socialLinks,
+  TextName,
+  Info,
+  Title,
+  Content,
+  Image,
+  Subtitle,
+  City,
+  Divider,
+  TableStyle,
+  TdStyle,
+  SocialLinks,
 } from './styles';
 
 import LinkedinLogo from '../../images/LinkedinLogo.png';
@@ -19,35 +19,35 @@ import UserPhoto from '../../images/UserPhoto.png';
 
 const Header = () => {
   document.getElementById('header').innerHTML = /*html*/ `
-      <header style="${info}">
-        <img id="user-photo" style="${image}" src="${UserPhoto}" alt="Photo of Lucas"/>
+      <header style="${Info}">
+        <img id="user-photo" style="${Image}" src="${UserPhoto}" alt="Photo of Lucas"/>
         <div>
-          <div style="${content}">
-            <h1 style="${title}" >
-              I'm <span style="${textName}">Lucas Jacinto<span>
+          <div style="${Content}">
+            <h1 style="${Title}" >
+              I'm <span style="${TextName}">Lucas Jacinto<span>
             </h1>
-            <h3 style="${subtitle}">Software Engineer & Full Stack Developer</h3>
-            <h4 style="${city}">Cornelio Procopio, Parana, Brazil</h4>
-            <hr style="${divider}">
+            <h3 style="${Subtitle}">Software Engineer & Full Stack Developer</h3>
+            <h4 style="${City}">Cornelio Procopio, Parana, Brazil</h4>
+            <hr style="${Divider}">
             <div>
-              <table style="${tableStyle}">
+              <table style="${TableStyle}">
                 <tbody>
                   <tr>
-                    <td style="${tdStyle}">Age:</td>
+                    <td style="${TdStyle}">Age:</td>
                     <td>23</td>
                   </tr>
                   <tr>
-                    <td style="${tdStyle}">Adress:</td>
+                    <td style="${TdStyle}">Adress:</td>
                     <td>Lorem ipsum dolor sit amet consectetur elit.</td>
                   </tr>
                   <tr>
-                    <td style="${tdStyle}">Telefone:</td>
+                    <td style="${TdStyle}">Telefone:</td>
                     <td>(43) 9 96569701</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div style="${socialLinks}">
+            <div style="${SocialLinks}">
               <a href="http://www.linkedin.com/in/lucasjcs" target="_blank" > <img src="${LinkedinLogo}" alt="Linkedin"/></a>
               <a href="http://www.github.com/lucasjcs" target="_blank" ><img src="${GithubLogo}" alt="GitHub"/></a>
               <a href="http://www.instagram.com/lucasjcs" target="_blank" ><img src="${InstagramLogo}" alt="Instagram"/></a>

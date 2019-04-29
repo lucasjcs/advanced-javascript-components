@@ -13,6 +13,7 @@ const themeStoreged =
     ? localStorage.getItem('theme')
     : 'LIGHTER_THEME';
 
+/*Global state of application */
 window.state = {
   experienceList: [],
   skillsList: [],

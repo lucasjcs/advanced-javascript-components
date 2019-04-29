@@ -48,6 +48,7 @@ const Skills = () => {
 
 const render = () => {
   const { skills, bachelor_skills } = window.state.skillsList;
+
   document.getElementById('skills').innerHTML = /*html*/ `
     <div style="${Content}">
       <div id="exp-title" style="${ContentHeader}">

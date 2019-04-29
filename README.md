@@ -1,6 +1,6 @@
 ﻿## Sobre
 
-Olá! Este projeto consiste em um currículo simples desenvolvido em javascript (ES6) puro, sem utilizar bibliotecas ou frameworks.
+Olá! Este projeto consiste em um currículo simples desenvolvido em javascript (ES6) puro, sem utilizar bibliotecas ou frameworks. 
 
 
 ## Tecnologias
@@ -14,7 +14,7 @@ Olá! Este projeto consiste em um currículo simples desenvolvido em javascript 
 
 ## Metodologia de Desenvolvimento
 
-Neste projeto utilizei de uma abordagem modular de desenvolvimento, que consiste basicamente em separar o código em componentes, semelhante ao que acontece quando utilizamos React, por exemplo. Nesse modelo de desenvolvimento o código tende a ficar um pouco mais complexo, porém muito mais escalável e reaproveitável. 
+Neste projeto utilizei de uma abordagem modular de desenvolvimento, que consiste basicamente em separar o código em componentes, semelhante ao que acontece quando utilizamos React, por exemplo. Nesse modelo de desenvolvimento o código tende a ficar um pouco mais complexo, porém muito mais escalável e reutilizável. 
 
 ## Como executar
 
@@ -41,10 +41,14 @@ $ npm start ou yarn start
     
 -   `master`: branch de produção, onde fica a versão pronta para build.
 
-#### Commits: 
+#### Commits
 -	`feat`: entrega de funcionalidades novas
 -	`fix`: correções realizadas no código
 -	`config`: desenvolvimento de configurações
+
+## Observação
+
+Para melhor legibilidade do código, recomendo que utilize o VSCode e instale a extensão [ES6 String HTML](ES6%20String%20HTML), com ela é possível visualizar com syntax highlight as template literals.
 
 ## Licence
 Este projeto foi desenvolvido com  :heart: por  [@lucasjcs](https://github.com/lucasjcs) sob a licença [MIT](https://opensource.org/licenses/MIT).

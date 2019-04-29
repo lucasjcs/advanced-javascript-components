@@ -1,59 +1,59 @@
 import colors from '../../styles/colors';
 
-export const content = `
+export const Content = `
   display: flex;
   flex-direction: column;
   flex: 1;
   width: 100%;
 `;
 
-export const textName = `
+export const TextName = `
   color: ${colors.primary};
   font-size: 28pt;
 `;
 
-export const info = `
+export const Info = `
   display: flex;
   flex-direction: row;
   flex: 1;
   margin-right: 40px;
 `;
 
-export const title = `
+export const Title = `
   margin-bottom: -15px;
 `;
 
-export const image = `
+export const Image = `
   height: 300px;
   margin-right: 50px;
   border-radius: 50%;
 `;
 
-export const subtitle = `
+export const Subtitle = `
   margin-bottom: -18px;
 `;
 
-export const city = `
+export const City = `
   color: ${colors.regular};
   margin-bottom: 0px;
 `;
 
-export const divider = `
+export const Divider = `
   width: 100%;
   border-bottom: 1px solid #333
   margin-bottom: 50px;
 `;
 
-export const tableStyle = `
+export const TableStyle = `
   margin-bottom: 20px;
 `;
 
-export const tdStyle = `
+export const TdStyle = `
   padding: 5px 10px 5px 0px;
   font-weight: bold;
 `;
 
-export const socialLinks = `
+export const SocialLinks = `
   display: flex;
   justify-content: space-between;
 `;
