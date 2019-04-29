@@ -30,6 +30,10 @@ export const ErrorStyle = `
   color: ${colors.danger}
 `;
 
+export const SkillList = `
+  padding: 30px;s
+`;
+
 export const SkillItem = `
   list-style-type: none;
   padding-bottom: 15px;

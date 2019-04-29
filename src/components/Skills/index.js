@@ -5,6 +5,7 @@ import {
   Title,
   Divider,
   ErrorStyle,
+  SkillList,
   SkillItem,
   SkillLevel,
   SkillLevelBG,
@@ -67,20 +68,20 @@ const render = () => {
             </div>
         `
           : /*html*/ `
-            <div>
+            <div style="${SkillList}">
               <ul>
                 ${
                   skills !== undefined
                     ? skills
                         .map(
                           skill => /*html*/ `
-                    <li style="${SkillItem}">
-                      <span style="${SkillName}" >${skill.name}</span>
-                      <div style="${SkillLevelBG}">
-                        <div style="${SkillLevel(skill.level)}"></div>
-                      </div>
-                    </li>
-                `
+                            <li style="${SkillItem}">
+                              <span style="${SkillName}" >${skill.name}</span>
+                              <div style="${SkillLevelBG}">
+                                <div style="${SkillLevel(skill.level)}"></div>
+                              </div>
+                            </li>
+                        `
                         )
                         .join(' ')
                     : ''
@@ -96,8 +97,8 @@ const render = () => {
                     ? bachelor_skills
                         .map(
                           bskil => /*html*/ `
-                      <li style="${BItemList}" >${bskil.desc}</li>
-                    `
+                            <li style="${BItemList}" >${bskil.desc}</li>
+                        `
                         )
                         .join(' ')
                     : ''

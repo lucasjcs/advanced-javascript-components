@@ -3,6 +3,9 @@ import Header from './components/Header';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Skills from './components/Skills';
+import Languages from './components/Languages';
+import Interests from './components/Interests';
+
 import { saveTheme, themeCheck } from './services/themeHelper';
 
 const themeStoreged =
@@ -26,3 +29,5 @@ Header();
 Experience();
 Education();
 Skills();
+Languages();
+Interests();
